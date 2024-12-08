@@ -94,6 +94,7 @@
             // 
             // dataGridViewTask_MAB
             // 
+            dataGridViewTask_MAB.AllowUserToDeleteRows = false;
             dataGridViewTask_MAB.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewTask_MAB.Location = new Point(480, 113);
             dataGridViewTask_MAB.Name = "dataGridViewTask_MAB";

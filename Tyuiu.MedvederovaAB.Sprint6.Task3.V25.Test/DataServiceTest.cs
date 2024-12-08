@@ -15,8 +15,7 @@ namespace Tyuiu.MedvederovaAB.Sprint6.Task3.V25.Test
             DataService ds = new DataService();
             int[,] sortedMatrix = ds.Calculate(matrix);
 
-           
-            Assert.AreEqual(-14, sortedMatrix[0, 2]);
+            Assert.AreEqual(-14, sortedMatrix[0, 2]); 
             Assert.AreEqual(-12, sortedMatrix[1, 2]);
             Assert.AreEqual(-9, sortedMatrix[2, 2]);
             Assert.AreEqual(6, sortedMatrix[3, 2]);
