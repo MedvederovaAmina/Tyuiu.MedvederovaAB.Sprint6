@@ -20,6 +20,12 @@ namespace Tyuiu.MedvederovaAB.Sprint6.Task3.V25.Test
             Assert.AreEqual(-9, sortedMatrix[2, 2]);
             Assert.AreEqual(6, sortedMatrix[3, 2]);
             Assert.AreEqual(17, sortedMatrix[4, 2]);
+
+            Assert.AreEqual(14, sortedMatrix[0, 0]);
+            Assert.AreEqual(-5, sortedMatrix[1, 0]);
+            Assert.AreEqual(27, sortedMatrix[2, 0]);
+            Assert.AreEqual(-19, sortedMatrix[3, 0]);
+            Assert.AreEqual(33, sortedMatrix[4, 0]);
         }
     }
 }

@@ -8,27 +8,22 @@ namespace Tyuiu.MedvederovaAB.Sprint6.Task3.V25.Lib
         {
             int rows = matrix.GetLength(0);
             int cols = matrix.GetLength(1);
-            int[,] sortedMatrix = (int[,])matrix.Clone(); 
 
-            int[] indices = new int[rows];
+            int[] thirdColumn = new int[rows];
             for (int i = 0; i < rows; i++)
             {
-                indices[i] = i; 
+                thirdColumn[i] = matrix[i, 2]; 
             }
 
-            Array.Sort(indices, (a, b) => sortedMatrix[a, 2].CompareTo(sortedMatrix[b, 2]));
+            
+            Array.Sort(thirdColumn);
 
-            int[,] result = new int[rows, cols];
             for (int i = 0; i < rows; i++)
             {
-                int sortedIndex = indices[i];
-                for (int j = 0; j < cols; j++)
-                {
-                    result[i, j] = sortedMatrix[sortedIndex, j]; 
-                }
+                matrix[i, 2] = thirdColumn[i]; 
             }
 
-            return result;
+            return matrix;
         }
     }
 }
